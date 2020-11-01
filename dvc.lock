@@ -1,0 +1,25 @@
+train:
+  cmd: python train.py
+  deps:
+  - path: mymodel.py
+    md5: c2bdd289b204555b3c7c263464a9e15e
+  - path: train.py
+    md5: ba082ed7ed3a4d1b04708dc359aeb854
+  - path: users.csv
+    md5: fadc70dff966edd21b3dd2b0c2755189
+  params:
+    params.yaml:
+      dropout: 0.124
+      dvc_logs_dir: dvc_logs
+      epochs: 5
+      learning_rate: 1.9e-07
+      log_file: logs.csv
+  outs:
+  - path: logs
+    md5: 66c294aa5ec54e88df9ce4e3110c6b21.dir
+  - path: logs.csv
+    md5: 181c2ed2cf49fb56bb065b9995371878
+  - path: model.h5
+    md5: 289358b9684ead5d976a9d27e2aafae4
+  - path: summary.json
+    md5: 3b526ea4f862fb6f1c2e53a2b6e28127
