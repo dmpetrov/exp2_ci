@@ -12,14 +12,14 @@ train:
       dropout: 0.124
       dvc_logs_dir: dvc_logs
       epochs: 5
-      learning_rate: 1.9e-07
+      learning_rate: 2.1e-07
       log_file: logs.csv
   outs:
   - path: logs
-    md5: 66c294aa5ec54e88df9ce4e3110c6b21.dir
+    md5: 59397b97f5e3f184353d9453de11c588.dir
   - path: logs.csv
-    md5: 181c2ed2cf49fb56bb065b9995371878
+    md5: 326bbfd432abe5806c7277118e3f5d33
   - path: model.h5
-    md5: 289358b9684ead5d976a9d27e2aafae4
+    md5: a9970cfed2c908906ad0a89665cbc9d3
   - path: summary.json
-    md5: 3b526ea4f862fb6f1c2e53a2b6e28127
+    md5: ef708eb048363d6412a2e0a077cf8171
