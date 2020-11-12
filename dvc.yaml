@@ -14,7 +14,7 @@ stages:
     outs:
     - logs
     - model.h5:
-        persist: true
+        checkpoint: true
     metrics:
     - summary.json:
         cache: false
