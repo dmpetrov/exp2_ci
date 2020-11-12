@@ -3,10 +3,13 @@ train:
   deps:
   - path: mymodel.py
     md5: c2bdd289b204555b3c7c263464a9e15e
+    size: 287
   - path: train.py
     md5: ba082ed7ed3a4d1b04708dc359aeb854
+    size: 2438
   - path: users.csv
     md5: fadc70dff966edd21b3dd2b0c2755189
+    size: 45
   params:
     params.yaml:
       dropout: 0.124
@@ -16,10 +19,15 @@ train:
       log_file: logs.csv
   outs:
   - path: logs
-    md5: 59397b97f5e3f184353d9453de11c588.dir
+    md5: 133956eb5dcb42457b1583b18204e4f8.dir
+    size: 75936
+    nfiles: 8
   - path: logs.csv
-    md5: 326bbfd432abe5806c7277118e3f5d33
+    md5: f0ef4ab490ff560bd2175454e96771e9
+    size: 435
   - path: model.h5
-    md5: a9970cfed2c908906ad0a89665cbc9d3
+    md5: 91a6bf1cdee50e4c65872901a4c03f2d
+    size: 4912080
   - path: summary.json
-    md5: ef708eb048363d6412a2e0a077cf8171
+    md5: 2fb312f962bb8a8014b914f2f29d87af
+    size: 127
