@@ -8,8 +8,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: iterative/cml-action@v1
-      - uses: iterative/dvc-action@v1
+      - uses: iterative/setup-cml@v1
+      - uses: iterative/setup-dvc@v1
 
       - name: cml
         env:
