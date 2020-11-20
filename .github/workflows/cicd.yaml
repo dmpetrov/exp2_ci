@@ -18,6 +18,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           echo "HELLO GH ACTIONS"
+          pip -V
           pip install -r requirements.txt
           dvc version
           dvc repro
