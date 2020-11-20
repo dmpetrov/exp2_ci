@@ -21,7 +21,7 @@ jobs:
           echo "HELLO GH ACTIONS"
           python -V
           pip -V
-          pip install -U pip сперва
+          pip install -U pip
           pip -V
           dvc version
 
