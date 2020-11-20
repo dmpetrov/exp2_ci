@@ -20,6 +20,7 @@ jobs:
         run: |
           echo "HELLO GH ACTIONS"
           python -V
+          python -c 'import sys;print("%x" % sys.maxsize, sys.maxsize > 2**32)'
           pip -V
           pip install -U pip
           pip -V
