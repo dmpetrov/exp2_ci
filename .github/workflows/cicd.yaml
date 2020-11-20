@@ -21,6 +21,8 @@ jobs:
           echo "HELLO GH ACTIONS"
           python -V
           pip -V
+          pip install -U pip сперва
+          pip -V
           dvc version
 
           pip install -r requirements.txt
