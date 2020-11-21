@@ -1,1 +1,4 @@
+yaml
 tensorflow>=2.0.0
+dvc
+wandb
