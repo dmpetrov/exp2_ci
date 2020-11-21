@@ -1,0 +1,3 @@
+pyyaml
+tensorflow>=2.0.0
+dvc

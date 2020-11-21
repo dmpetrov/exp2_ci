@@ -5,8 +5,8 @@ import json
 import time
 #import neptune
 #from neptunecontrib.monitoring.keras import NeptuneMonitor
-import wandb
-from wandb.keras import WandbCallback
+#import wandb
+#from wandb.keras import WandbCallback
 from mymodel import create_model
 import os
 #from elog.keras import ElogCallback
@@ -14,7 +14,7 @@ from tensorflow import keras
 from tensorflow.keras.callbacks import ModelCheckpoint, Callback
 from dvc.api import make_checkpoint
 
-wandb.init(project="mnist")
+#wandb.init(project="mnist")
 
 weights_file = "model.h5"
 summary = "summary.json"
@@ -68,7 +68,7 @@ history = model.fit(x=x_train,
                         csv_logger,
                         tensorboard_callback
                         #, NeptuneMonitor()
-                        , WandbCallback()
+                        #, WandbCallback()
                         #, ElogCallback()
                         #, ModelCheckpoint(weights_file, monitor='loss',
                         #                    mode='auto', period=1)
@@ -77,5 +77,5 @@ history = model.fit(x=x_train,
 end_real = time.time()
 end_process = time.process_time()
 
-model.save(os.path.join(wandb.run.dir, weights_file))
+model.save(weights_file)
 
