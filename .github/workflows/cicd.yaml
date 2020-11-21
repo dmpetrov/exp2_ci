@@ -28,3 +28,6 @@ jobs:
           #pip install tensorflow
           pip3 install -r requirements.txt
           dvc repro
+          dvc push
+          git add .
+          git commit -m 'ci train'
