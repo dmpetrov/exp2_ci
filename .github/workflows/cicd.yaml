@@ -7,25 +7,20 @@ jobs:
     runs-on: [ubuntu-latest]
 
     steps:
-      - uses: actions/checkout@v2
+      #- uses: actions/checkout@v2
       - uses: actions/setup-python@v2
       #- uses: iterative/setup-cml@v1
       #- uses: iterative/setup-dvc@v1
 
       - name: cml
-        env:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        #env:
+        #  repo_token: ${{ secrets.GITHUB_TOKEN }}
+        #  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        #  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           echo "HELLO GH ACTIONS"
           python -V
-          python3 -V
-          #python -c 'import sys;print("%x" % sys.maxsize, sys.maxsize > 2**32)'
           pip -V
-          pip3 -V
-          #pip install -U pip
-          #pip -V
           #dvc version
 
           pip install tensorflow
