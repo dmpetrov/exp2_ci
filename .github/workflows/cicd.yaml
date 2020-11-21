@@ -20,11 +20,13 @@ jobs:
         run: |
           echo "HELLO GH ACTIONS"
           python -V
-          python -c 'import sys;print("%x" % sys.maxsize, sys.maxsize > 2**32)'
+          python3 -V
+          #python -c 'import sys;print("%x" % sys.maxsize, sys.maxsize > 2**32)'
           pip -V
-          pip install -U pip
-          pip -V
+          pip3 -V
+          #pip install -U pip
+          #pip -V
           dvc version
 
-          pip install -r requirements.txt
+          pip3 install -r requirements.txt
           dvc repro
