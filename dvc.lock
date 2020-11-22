@@ -16,15 +16,15 @@ train:
       log_file: logs.csv
   outs:
   - path: logs
-    md5: d8c7382b3db035ef4cebb0894ed98b18.dir
-    size: 87649
+    md5: 41fb3b8c998b43ed7cab2f11ef6da2e7.dir
+    size: 88767
     nfiles: 10
   - path: logs.csv
-    md5: c083196a46999c18100c3e626d6a1654
-    size: 437
+    md5: 94af84505924ea932fe4f542d2e5f233
+    size: 440
   - path: model.h5
-    md5: 0b56d5840dbc7fa31862436ae0b6725f
+    md5: 20218f664f0e273a7abf4d439d0833e9
     size: 4912080
   - path: summary.json
-    md5: b42e37628b08dffb5877b22189aa1bcd
+    md5: 64fb747ed057e169c8897bf6c7da79bc
     size: 127
