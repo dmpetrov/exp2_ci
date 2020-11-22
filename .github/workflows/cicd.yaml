@@ -29,5 +29,8 @@ jobs:
           pip3 install -r requirements.txt
           dvc repro
           dvc push
+          
+          git config --local user.email "$(git log --format='%ae' HEAD^!)"
+          git config --local user.name "$(git log --format='%an' HEAD^!)"
           git add .
           git commit -m 'ci train'
