@@ -34,3 +34,4 @@ jobs:
           git config --local user.name "$(git log --format='%an' HEAD^!)"
           git add .
           git commit -m 'ci train'
+          git push
