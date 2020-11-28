@@ -10,11 +10,11 @@ terraform {
 provider "iterative" {}
 
 resource "iterative_machine" "machine" {
-  region = "us-west"
+  region = "us-east"
   ami = "iterative-cml"
   instance_hdd_size = "10"
-  instance_type = "m"
-  #instance_gpu = "tesla" 
+  instance_type = "l"
+  instance_gpu = "tesla" 
 }
 
 #output "ip" {
