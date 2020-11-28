@@ -17,6 +17,6 @@ resource "iterative_machine" "machine" {
   #instance_gpu = "tesla" 
 }
 
-output "ip" {
-  value = iterative_machine.public_ip
-}
+#output "ip" {
+#  value = iterative_machine.public_ip
+#}
