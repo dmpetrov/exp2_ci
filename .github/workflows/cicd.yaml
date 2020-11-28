@@ -16,11 +16,13 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_SESSION_TOKEN: ${{ secrets.aws_session_token }}
         run: |
+          echo "Start deploying TF"
           test-cml-cloud-runner \
                 --labels=tf \
                 --type=t2.micro \
                 --region us-west-1 \
                 --idle-timeout=120
+          echo "The deployment is done"
 
   train:
     needs: deploy-tf
