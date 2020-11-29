@@ -20,3 +20,4 @@ resource "iterative_machine" "machine" {
 #output "ip" {
 #  value = iterative_machine.public_ip
 #}
+
